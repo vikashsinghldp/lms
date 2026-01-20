@@ -1,0 +1,39 @@
+{% extends 'base_dashboard.html' %}
+{% block content %}
+<div class="container mt-4">
+    <h4>Doubt Section – {{ course.title }}</h4>
+
+    <!-- Ask Doubt -->
+    <form method="post" action="{% url 'ask_doubt' course.id %}">
+        {% csrf_token %}
+        <textarea name="question" class="form-control mb-2"
+                  placeholder="Ask your doubt..." required></textarea>
+        <button class="btn btn-primary btn-sm">
+            Ask Doubt
+        </button>
+    </form>
+
+    <hr>
+
+    <!-- Doubts List -->
+    {% for doubt in doubts %}
+        <div class="card mb-3">
+            <div class="card-body">
+                <strong>You:</strong>
+                <p>{{ doubt.question }}</p>
+
+                {% if doubt.is_answered %}
+                    <div class="alert alert-success mt-2">
+                        <strong>Teacher Reply:</strong>
+                        <p class="mb-0">{{ doubt.reply }}</p>
+                    </div>
+                {% else %}
+                    <span class="badge bg-warning">Pending</span>
+                {% endif %}
+            </div>
+        </div>
+    {% empty %}
+        <p class="text-muted">No doubts asked yet.</p>
+    {% endfor %}
+</div>
+{% endblock %}

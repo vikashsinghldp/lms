@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 10px 20px;
+    box-shadow: 0 0 7px rgba(0,0,0,0.7);
+}
+nav ul li{
+display: inline-block;
+}
+nav ul li a{
+color: black;
+margin: 0 10px;
+font-size: 20px;
+font-weight: 300;
+}
+nav ul li a:hover{
+    color: gray;
+    font-size: 22px;
+    transition: all 0.1s;
+}
+.logo{
+    font-size: 28px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 250px;
+    height: 400px;
+    background: rgb(70, 14, 14);
+}
+.logo-slider {
+    overflow: hidden;
+    position: relative;
+    background: #f8f9fa;
+    padding: 25px 0;
+    border-radius: 12px;
+}
+
+.logo-track {
+    display: flex;
+    align-items: center;
+    width: calc(250px * 12);
+    animation: scroll 20s linear infinite;
+}
+
+.logo-track img {
+    width: 180px;
+    margin: 0 30px;
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+.logo-track img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

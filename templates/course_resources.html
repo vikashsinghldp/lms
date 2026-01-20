@@ -1,0 +1,53 @@
+{% extends 'base_dashboard.html' %}
+{% block content %}
+<div class="container mt-4">
+    <h3 class="mb-4">
+        📚 Resources – {{ course.title }}
+    </h3>
+
+    <!-- NOTES -->
+    <div class="mb-5">
+        <h5 class="fw-bold">📘 Notes</h5>
+
+        {% if notes %}
+            <ul class="list-group">
+                {% for note in notes %}
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    {{ note.title }}
+                    <a href="{{ note.file.url }}"
+                       class="btn btn-sm btn-outline-primary"
+                       download>
+                        Download
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p class="text-muted">No notes available.</p>
+        {% endif %}
+    </div>
+
+    <!-- ASSIGNMENTS -->
+    <div>
+        <h5 class="fw-bold">📝 Assignments</h5>
+
+        {% if assignments %}
+            <ul class="list-group">
+                {% for assign in assignments %}
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    {{ assign.title }}
+                    <a href="{{ assign.file.url }}"
+                       class="btn btn-sm btn-outline-success"
+                       download>
+                        Download
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p class="text-muted">No assignments available.</p>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock %}

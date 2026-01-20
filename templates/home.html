@@ -1,0 +1,339 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+ <div class="container-fluid p-0 mb-5">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="{% static 'img/carousel-1.jpg' %}" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Best Online Courses</h5>
+                                <h1 class="display-3 text-white animated slideInDown">Learn Coding. Build Real Projects. Get Job-Ready.</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">Start your programming journey with industry-ready courses in Python, Java, C, C++, and Full Stack Development. Learn step-by-step, work on real-world projects, and gain the skills companies actually hire for.</p>
+                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="{% static 'img/carousel-2.jpg' %}" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Best Online Courses</h5>
+                                <h1 class="display-3 text-white animated slideInDown">From Beginner to Professional Programmer</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">No prior coding experience needed. Our structured courses are designed for students, job seekers, and career switchers. Learn coding from scratch with practical examples, hands-on practice, and expert guidance.</p>
+                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
+                            <h5 class="mb-3">Industry-Relevant Curriculum</h5>
+                            <p>Learn the most in-demand programming skills including Python, Java, C, C++, and Full Stack development, designed to match real industry requirements.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                            <h5 class="mb-3">Beginner Friendly Teaching</h5>
+                            <p>Start from zero and grow step-by-step. Our courses are structured for beginners with easy explanations, practice tasks, and mentor support.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-home text-primary mb-4"></i>
+                            <h5 class="mb-3">Hands-On Project Based Learning</h5>
+                            <p>Build real-world projects while learning. Gain practical experience that strengthens your portfolio and makes you job-ready.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
+                            <h5 class="mb-3">Career & Interview Support</h5>
+                            <p>Get resume guidance, interview preparation, and career mentorship to help you secure jobs, internships, or freelance opportunities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="{% static 'img/about.jpg' %}" alt="" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                    <h1 class="mb-4">Welcome to eLEARNING</h1>
+                    <p class="mb-4">We offer industry-focused courses in Python, Java, C, C++, Full Stack Web Development, and more, designed to meet real-world job requirements. Our learning approach emphasizes hands-on practice, real projects, and problem-solving, not just theory.</p>
+                    <p class="mb-4">With structured lessons, expert mentorship, and a learner-first mindset, we aim to transform beginners into skilled, job-ready programmers.</p>
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Instructors</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Online Classes</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>International Certificate</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Instructors</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Online Classes</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>International Certificate</p>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Categories Start -->
+
+    <!-- Categories Start -->
+
+
+    <!-- Courses Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Courses</h6>
+                <h1 class="mb-5">Popular Courses</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="{% static 'img/course-1.jpg' %}" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="/course1" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0">₹2999</h3>
+                            <h5 class="mb-4 pb-4">BCA Semester II Course</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="{% static 'img/course-2.jpg' %}" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0">₹2999</h3>
+                    
+                            <h5 class="mb-4 pb-4">Web Development Course for Beginners</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="{% static 'img/course-3.jpg' %}" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0">₹2999</h3>
+            
+                            <h5 class="mb-4 pb-4">Python Course for Beginners</h5>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Courses End -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container py-5">
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h6 class="section-title bg-white text-center text-primary px-3">Instructor</h6>
+        <h1 class="mb-5">Meet Your Instructor</h1>
+    </div>
+
+    <div class="row align-items-center g-5">
+        <!-- Instructor Image -->
+        <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
+            <div class="overflow-hidden rounded">
+                <img class="img-fluid w-100" src="{% static 'img/vikash.jpeg' %}" alt="Instructor">
+            </div>
+        </div>
+
+        <!-- Instructor Content -->
+        <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
+            <h2 class="mb-2">Vikash Singh</h2>
+            <h6 class="text-primary mb-3">Senior Software Developer & Coding Mentor</h6>
+
+            <p class="mb-3">
+                With over <strong>2+ years of experience</strong> in software development and training, 
+                Vikash Singh has helped hundreds of students and professionals build strong foundations 
+                in programming and launch successful tech careers.
+            </p>
+
+            <p class="mb-4">
+                His teaching approach focuses on <strong>practical learning, real-world projects, 
+                and interview preparation</strong>. He specializes in Python, Java, C, C++, 
+                and Full Stack Web Development, making complex concepts easy for beginners.
+            </p>
+
+            <!-- Highlights -->
+            <ul class="list-unstyled mb-4">
+                <li>✔ Industry-focused curriculum</li>
+                <li>✔ Real project-based teaching</li>
+                <li>✔ Beginner to advanced guidance</li>
+                <li>✔ Career & freelancing mentorship</li>
+            </ul>
+
+            <!-- Social Icons -->
+            <div class="d-flex flex-row gap-2">
+                <a class="btn btn-sm-square btn-primary me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-sm-square btn-primary me-2" href="#"><i class="fab fa-github"></i></a>
+                <a class="btn btn-sm-square btn-primary me-2" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
+                <h1 class="mb-5">Our Students Say!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="{% static 'img/testimonial-1.jpg' %}" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Ritika Singh</h5>
+                    <p>Student</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">“This course helped me learn Python from scratch. The projects and real-life examples 
+                    made coding very easy to understand.”</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="{% static 'img/testimonial-2.jpg' %}" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Amit Kumar</h5>
+                    <p>Full Stack Learner</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">“The teaching style is beginner-friendly and practical. I built my first website and 
+                    gained confidence for interviews.”</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="{% static 'img/testimonial-3.jpg' %}" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Rakesh Singh</h5>
+                    <p>Java Developer</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">“Best coding mentor I’ve learned from. Clear explanation, live practice, and full 
+                    interview preparation support.”</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="{% static 'img/testimonial-4.jpg' %}" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Priya Singh</h5>
+                    <p>C++ Student</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0">“The course structure is very practical and easy to follow. I improved my coding logic 
+            and now I can confidently solve programming problems on my own.”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+     <!--top companies hiring-->
+     <div class="container py-5">
+    <div class="text-center mb-4 wow fadeInUp" data-wow-delay="0.1s">
+        <h6 class="section-title bg-white text-center text-primary px-3">
+            Hiring Partners
+        </h6>
+        <h1 class="mb-4">Top Companies Hiring Our Students</h1>
+    </div>
+
+    <div class="logo-slider">
+        <div class="logo-track">
+            <marquee>
+           <img style="width: 150px;" src="{% static 'img/company-microsoft.png' %}" alt="Microsoft">
+            <img style="width: 150px;" src="{% static 'img/company-google.png' %}" alt="Google">
+            <img style="width: 150px;" src="{% static 'img/company-amazon.png' %}" alt="Amazon">
+            <img style="width: 150px;" src="{% static 'img/company-tcs.webp' %}" alt="TCS">
+            <img style="width: 150px;"  src="{% static 'img/company-infosys.png' %}" alt="Infosys">
+            <img style="width: 150px;" src="{% static 'img/company-wipro.webp' %}" alt="Wipro">
+            <img style="width: 150px;" src="{% static 'img/company-microsoft.png' %}" alt="Microsoft">
+            <img style="width: 150px;" src="{% static 'img/company-google.png' %}" alt="Google">
+            <img style="width: 150px;" src="{% static 'img/company-amazon.png' %}" alt="Amazon">
+            <img style="width: 150px;" src="{% static 'img/company-tcs.webp' %}" alt="TCS">
+            <img style="width: 150px;"  src="{% static 'img/company-infosys.png' %}" alt="Infosys">
+            <img style="width: 150px;" src="{% static 'img/company-wipro.webp' %}" alt="Wipro">
+
+            <!-- Duplicate for smooth infinite scroll -->
+            <img style="width: 150px;" src="{% static 'img/company-microsoft.png' %}" alt="Microsoft">
+            <img style="width: 150px;" src="{% static 'img/company-google.png' %}" alt="Google">
+            <img style="width: 150px;" src="{% static 'img/company-amazon.png' %}" alt="Amazon">
+            <img style="width: 150px;" src="{% static 'img/company-tcs.webp' %}" alt="TCS">
+            <img style="width: 150px;"  src="{% static 'img/company-infosys.png' %}" alt="Infosys">
+            <img style="width: 150px;" src="{% static 'img/company-wipro.webp' %}" alt="Wipro">
+            </marquee>
+            
+        </div>
+    </div>
+</div>
+{% endblock %}
